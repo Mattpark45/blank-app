@@ -1,19 +1,30 @@
-# 🎈 Blank app template
+# 📈 Stock Price Prediction Dashboard
 
-A simple Streamlit app template for you to modify!
+This Streamlit app compares two machine learning models (XGBoost and LSTM) to predict stock prices using historical data.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## 🚀 Features
+- Downloads stock data using `yfinance`
+- Predicts closing price with both XGBoost and LSTM models
+- Visualizes actual vs predicted prices
+- Compares model performance with RMSE
 
-### How to run it on your own machine
+## 📦 Requirements
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-1. Install the requirements
+## ▶️ Run locally
+```bash
+streamlit run app.py
+```
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+## ☁️ Deploy on Streamlit Cloud
+1. Fork this repository
+2. Go to [streamlit.io/cloud](https://streamlit.io/cloud)
+3. Click "New app", connect your GitHub, and select `app.py`
+4. Click Deploy 🎉
 
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## 🧠 Models used
+- XGBoost: gradient-boosted tree for tabular prediction
+- LSTM: deep learning model for time series prediction
